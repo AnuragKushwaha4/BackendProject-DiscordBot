@@ -6,7 +6,8 @@ import { Client, GatewayIntentBits, messageLink } from "discord.js";
 
 
 //it is virtual client used to interact through server:
-//passing intent : means what permission are given .
+//passing intent : means what permission are given .means give list of permission to the client
+
 const client = new Client({ intents: [GatewayIntentBits.Guilds,
     GatewayIntentBits.GuildMessages,
     GatewayIntentBits.MessageContent] });
@@ -14,13 +15,16 @@ const client = new Client({ intents: [GatewayIntentBits.Guilds,
 client.on("messageCreate",(message)=>{
     if(message.author.bot) return;
     message.reply({
-        content:"Hi From Anurag's Bot"
+        content:"Hi From Anurag's Bot "
     })
     
 })
 
 //interaction is actually for commands that we create .
 client.on("interactionCreate",(interaction)=>{
-    interaction.reply("Pong!!")
+    interaction.reply("i am your AI assistant")
 })
+
+
+//login done using token provided by portal
 client.login(token);

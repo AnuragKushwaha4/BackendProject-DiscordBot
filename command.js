@@ -6,7 +6,7 @@ const clintID = process.env.clintID;
 const commands = [
   {
     name: 'ping',
-    description: 'Replies with Pong!',
+    description: 'AI assistant to user queries',
   },
 ];
 
