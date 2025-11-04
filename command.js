@@ -3,11 +3,17 @@ import 'dotenv/config';
 
 const token = process.env.token;
 const clintID = process.env.clintID;
+
 const commands = [
   {
     name: 'ping',
-    description: 'AI assistant to user queries',
+    description: 'reply with pong',
   },
+  {
+    name:'askAI',
+    description: 'AI assistant to users with Their Queries',
+
+  }
 ];
 
 const rest = new REST({ version: '10' }).setToken(token);

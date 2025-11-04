@@ -22,7 +22,8 @@ client.on("messageCreate",(message)=>{
 
 //interaction is actually for commands that we create .
 client.on("interactionCreate",(interaction)=>{
-    interaction.reply("i am your AI assistant")
+    console.log(inter)
+    interaction.reply("Pong!!")
 })
 
 
