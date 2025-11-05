@@ -49,7 +49,7 @@ client.on(Events.InteractionCreate, async interaction => {
 
     let response = getAIResponse(query)
     console.log(response)
-    await interaction.reply('Pong!');
+    await interaction.editReply('Pong!');
   }
 });
 
