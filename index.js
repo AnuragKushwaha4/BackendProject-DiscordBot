@@ -47,9 +47,9 @@ client.on(Events.InteractionCreate, async interaction => {
     await interaction.deferReply();
 
 
-    let response = getAIResponse(query)
+    let response = await getAIResponse(query)
     console.log(response)
-    await interaction.editReply('Pong!');
+    await interaction.editReply(response.data.response);
   }
 });
 
