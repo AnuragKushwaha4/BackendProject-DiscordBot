@@ -10,8 +10,16 @@ const commands = [
     description: 'reply with pong',
   },
   {
-    name:'askAI',
-    description: 'AI assistant to users with Their Queries',
+    name:'ai',
+    description: 'AI assistant to users with Their Queries.',
+    options: [
+      {
+        name: 'query',
+        description: 'Your question or message for the AI.',
+        type: 3,
+        required: true,
+      }
+    ]
 
   }
 ];
